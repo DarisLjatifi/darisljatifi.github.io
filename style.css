@@ -1,4 +1,29 @@
-p {
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+body{
+    background-image: url('https://i.pinimg.com/originals/15/08/91/150891da0e28ee69e406c23ba4e33804.gif');
+    background-size: cover;
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+    
+}
+
+.kutija {
+
+	margin-top: 15px;
+
+	border-style: dashed solid;
+	border-color: grey;
+	border-width: 3px;
+
+	padding-left: 12px;
+	padding-right: 7px;
+
+	color: white;
+	background-color: black;
+
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px
 
@@ -6,17 +31,93 @@ p {
 
 
 h1 {
-	background-color: #000000 ;
-	color: white;
 
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font
+	font-size: 75px;
+
+	text-align: center;
+
 }
 
 .container{
-	background-color: #000000 ;
-	color: white;
 
 	width:80%;
 	margin:auto; 
+
+	padding-bottom: 12px; 
+	padding-top: 12px;
+	padding-left: 12px;
+	padding-right: 12px;
 }
+
+#youtube1{
+	float: left;
+	width: 0%;
+	margin: auto;
+	background-color: black;
+}
+
+#youtube2{
+	float: right;
+	padding-top: 16px;
+	margin: auto; 
+	background-color: white;
+	width: 0%;
+}
+/*
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #1D1F20;
+}
+*/
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 100px;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 4.5rem;
+  text-align: center;
+  margin: auto;
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
