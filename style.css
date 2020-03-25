@@ -63,6 +63,20 @@ h1 {
 	background-color: white;
 	width: 0%;
 }
+
+#instagram{
+	padding-top: 15px;
+	padding-left: 425px;
+	float:left;
+	width: 0%;
+}
+
+#instagram1{
+	padding-top: 15px;
+	padding-right: 750px;
+	float: right;
+	width: 0%;
+}
 /*
 html, body {
   height: 100%;
