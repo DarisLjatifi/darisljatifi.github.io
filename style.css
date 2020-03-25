@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,700&display=swap');
 
 body{
     background-image: url('https://i.pinimg.com/originals/15/08/91/150891da0e28ee69e406c23ba4e33804.gif');
@@ -10,22 +10,25 @@ body{
     
 }
 
+
 .kutija {
 
 	margin-top: 15px;
 
 	border-style: dashed solid;
-	border-color: grey;
+	border-color: white;
 	border-width: 3px;
 
 	padding-left: 12px;
 	padding-right: 7px;
 
 	color: white;
-	background-color: black;
+	background-color: #121212;
 
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px
+	font-family: 'Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15.5px;
+
+	letter-spacing: 1px;
 
 }
 
@@ -38,6 +41,7 @@ h1 {
 
 }
 
+
 .container{
 
 	width:80%;
@@ -49,34 +53,7 @@ h1 {
 	padding-right: 12px;
 }
 
-#youtube1{
-	float: left;
-	width: 0%;
-	margin: auto;
-	background-color: black;
-}
 
-#youtube2{
-	float: right;
-	padding-top: 16px;
-	margin: auto; 
-	background-color: white;
-	width: 0%;
-}
-
-#instagram{
-	padding-top: 15px;
-	padding-left: 425px;
-	float:left;
-	width: 0%;
-}
-
-#instagram1{
-	padding-top: 15px;
-	padding-right: 750px;
-	float: right;
-	width: 0%;
-}
 /*
 html, body {
   height: 100%;
@@ -89,24 +66,31 @@ body {
   background: #1D1F20;
 }
 */
+
+
 #box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 400px;
+  justify-content: left;
+  width: 1891px;
   height: 100px;
   color: white;
   font-family: 'Raleway';
   font-size: 4.5rem;
-  text-align: center;
-  margin: auto;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 25px;
 }
+
+
 .gradient-border {
   --borderWidth: 3px;
-  background: #1D1F20;
+  background: #121212;
   position: relative;
   border-radius: var(--borderWidth);
 }
+
+
 .gradient-border:after {
   content: '';
   position: absolute;
