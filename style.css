@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,700&display=swap');
 
 body{
-    background-image: url('https://i.pinimg.com/originals/15/08/91/150891da0e28ee69e406c23ba4e33804.gif');
+    background-image: url('http://getwallpapers.com/wallpaper/full/f/c/b/617489.jpg');
     background-size: cover;
     
     height: 100vh;
     padding:0;
     margin:0;
-    
+
 }
 
 
@@ -23,7 +23,7 @@ body{
 	padding-right: 7px;
 
 	color: white;
-	background-color: #121212;
+	background-color: rgba(18, 18, 18, 0.75);
 
 	font-family: 'Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 15.5px;
@@ -42,7 +42,7 @@ h1 {
 }
 
 
-.container{
+.containerr{
 
 	width:80%;
 	margin:auto; 
@@ -133,7 +133,107 @@ body {
   border-radius: 24px;
   transition: 0.25s;
   cursor: pointer;
+  margin-left: auto;
 }
 #box-1 input[type = "submit"]:hover{
   background: #2ecc71;
+}
+/*
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1f1;
+}
+*/
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.btn{
+  border: none;
+  margin: 20px;
+  padding: 24px;
+  width: 220px;
+  font-family: "montserrat",sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  background-size: 200%;
+  transition: 0.6s;
+}
+
+.btn1{
+  background-image: linear-gradient(to left,#FFC312,#EE5A24,#FFC312);
+  position: relative;
+  font-size: 25px;
+  right: 60%
+}
+
+.btn2{
+  background-image: linear-gradient(to left,#C4E538,#009432,#C4E538);
+}
+
+.btn3{
+  background-image: linear-gradient(to left,#12CBC4,#0652DD,#12CBC4);
+  position: relative;
+  font-size: 25px;
+  right: 69%
+
+}
+
+.btn4{
+  background-image: linear-gradient(to left,#FDA7DF,#9980FA,#FDA7DF);
+}
+
+.btn:hover{
+  background-position: right;
 }
